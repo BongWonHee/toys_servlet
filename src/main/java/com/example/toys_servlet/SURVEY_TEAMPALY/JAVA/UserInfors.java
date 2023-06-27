@@ -20,8 +20,8 @@ public class UserInfors extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        ArrayList arrayList = new ArrayList<>();
                 try {
+                    ArrayList arrayList = new ArrayList();
             Common common = new Common();
             String query = "SELECT *\n" + //
                     "from user;";
@@ -35,9 +35,11 @@ public class UserInfors extends HttpServlet {
                 hashMap.put("PASSWORD", resultSet.getString("PASSWORD"));
                 arrayList.add(hashMap);
             }
+
+            request.setAttribute("arrayList", arrayList);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/UserInfors.jsp");
             dispatcher.forward(request, response);
-
+            System.out.println();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
