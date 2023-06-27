@@ -13,6 +13,7 @@
 <body>
     <div class="container-fluid mainpage">
         <!-- 상단 -->
+        <!-- <%@ include file="/top_menus.jsp" %> -->
         <table width="100%" class="mb-3 mt-5">
             <tbody class="">
                 <tr>
