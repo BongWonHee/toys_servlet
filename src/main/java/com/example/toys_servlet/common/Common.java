@@ -12,8 +12,13 @@ public class Common {
 
     public Statement getStatement() {
         
+<<<<<<< HEAD
         String url = "jdbc:mysql://192.168.0.46:3306/db_usersurvey";
         String user = "yojulab";
+=======
+        String url = "jdbc:mysql://127.0.0.1:3306/db_usersurvey";
+        String user = "root";
+>>>>>>> 198dfa8ffc01f89a2e2941b0faa7a0fe8eee64a2
         String password = "!yojulab*";
         System.out.println("성공");
         Statement statement = null;

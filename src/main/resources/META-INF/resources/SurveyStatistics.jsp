@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/main/resources/META-INF/resources/SurveyList.jsp
 <%@ page import="java.util.HashMap, java.util.ArrayList" %>
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
         <%@ import="com.example.toys_servlet.SURVEY_TEAMPALY.JAVA.SurveyMethod" %>
@@ -111,3 +112,16 @@
             </body>
 
             </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%@ include file="./commons/menubar.jsp" %>
+</body>
+</html>
+>>>>>>> 198dfa8ffc01f89a2e2941b0faa7a0fe8eee64a2:src/main/resources/META-INF/resources/SurveyStatistics.jsp

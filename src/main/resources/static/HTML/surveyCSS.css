@@ -18,8 +18,6 @@ ul {
 }
 
 
-
-
 .page-title {
     white-space: nowrap;
     overflow: hidden;
@@ -41,4 +39,31 @@ ul {
     margin-right: 15rem;
     max-width: 90%; 
     margin: 0 auto; 
+}
+
+.loginsite{
+width: 300px;
+height: 200px;
+border: 0;
+border-radius: 10px;
+background-color: antiquewhite;
+padding: 20px;
+margin: 0 auto;
+font-size: 15px;
+text-align: center;
+
+}
+
+.thead {
+    text-align: center;
+}
+
+.usertable {
+    width: 500px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.surveytable {
+    height: 500px;
 }

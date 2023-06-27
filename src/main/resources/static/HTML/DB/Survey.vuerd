@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -3,
+    "scrollTop": 0,
     "scrollLeft": -3,
     "zoomLevel": 1,
     "show": {
