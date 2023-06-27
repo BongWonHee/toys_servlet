@@ -12,7 +12,7 @@ public class Common {
 
     public Statement getStatement() {
         
-        String url = "jdbc:mysql://192.168.0.46:3306/db_cars";
+        String url = "jdbc:mysql://192.168.0.94:3306/db_userservey";
         String user = "yojulab";
         String password = "!yojulab*";
         
