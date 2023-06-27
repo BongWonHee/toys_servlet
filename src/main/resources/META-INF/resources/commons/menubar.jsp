@@ -39,7 +39,7 @@
                 <a class="text-success navbar-brand" href="../survey.jsp">설문하기</a>
             </li>
             <li>
-                <a class="text-success navbar-brand" href="../UserInfors.jsp">회원관리</a>
+                <a class="text-success navbar-brand" href="http://192.168.0.94:8080/userInfors">회원관리</a>
             </li>
             <li>
                 <a class="text-success navbar-brand" href="../SurveyStatistics.jsp">통계관리</a>
