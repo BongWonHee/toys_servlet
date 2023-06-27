@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.my-navbar {
+    justify-content: flex-start;
+}
+
+.login_out {
+    justify-content: end;
+    display: flex;
+}
+
+.membership {
+    justify-content: flex-end;
+}
+
+
+
+
+.page-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.form-row button {
+    margin-top: 1rem;
+}
+
+.qna {
+    border-spacing: 0; /* Optional: Remove extra space between table cells */
+    padding: 10px;
+}
+
+.mainpage {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    max-width: 90%; 
+    margin: 0 auto; 
+}
