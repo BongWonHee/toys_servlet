@@ -22,37 +22,42 @@ public class SurveyLogin implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
-        String username = request.getParameter("username");
+        String userid = request.getParameter("id");
         String password = request.getParameter("password");
 
         // display
 
         // login 할때 jsession 있는지 판단해서 있으면 만들지 않고 없으면 만들어줌.
         HttpSession httpSession = ((HttpServletRequest) request).getSession(false);
-        if (httpSession != null) { // jsession 있음 로그인 됨
-            httpSession.getAttribute("username");
+        String usernamesession = (String) httpSession.getAttribute("id");
+        if (httpSession != null && usernamesession != null) { // jsession 있음 로그인 됨
+            httpSession.getAttribute("id");
             httpSession.getAttribute("password");
+            httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyLogin.jsp");
+            requestDispatcher.forward(request, response);
 
         } else { // jsession 없음 로그인이 안됨.
-            if ("홍길동".equals(username) && "1234".equals(password)) {
+            if ("홍길동".equals(userid) && "1234".equals(password)) {
                 httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyList.jsp");
                 requestDispatcher.forward(request, response);
-            } else if ("박영희".equals(username) && "5678".equals(password)) {
+            } else if ("박영희".equals(userid) && "5678".equals(password)) {
                 httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyList.jsp");
                 requestDispatcher.forward(request, response);
 
-            } else if ("김철수".equals(username) && "91011".equals(password)) {
+            } else if ("김철수".equals(userid) && "91011".equals(password)) {
                 httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyList.jsp");
                 requestDispatcher.forward(request, response);
-            } else if ("이영미".equals(username) && "1213".equals(password)) {
+            } else if ("이영미".equals(userid) && "1213".equals(password)) {
                 httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyList.jsp");
                 requestDispatcher.forward(request, response);
             } else {
-
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyLogin.jsp");
+                requestDispatcher.forward(request, response);
             }
         }
     }
