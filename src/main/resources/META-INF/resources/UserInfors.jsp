@@ -12,27 +12,32 @@
  <div class="container-fluid ">
         <table class="table-bordered">
             <tr>
-                <td>
-                    이름
-                </td>
-                <td>
-                    User ID
-                </td>
-                <td>
-                    Password
-                </td>
+                <th>이름</th>
+                <th>User ID</th>
+                <th>Password</th>
             </tr>
+            
+            <% 
+                for (HashMap<String, String> hashMap : arrayList) {
+                    String name = hashMap.get("NAME");
+                    String userId = hashMap.get("USER_ID");
+                    String password = hashMap.get("PASSWORD");
+                
+                
+            %>
+
             <tr>
                 <td>
-                    name
+                    <%= name %>
                 </td>
                 <td>
-                    User
+                    <%= userId %>
                 </td>
                 <td>
-                    word
+                    <%= password %>
                 </td>
             </tr>
+            <% } %>
         </table>
     </div>
 

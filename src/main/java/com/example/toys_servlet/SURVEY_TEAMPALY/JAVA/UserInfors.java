@@ -3,7 +3,10 @@ package com.example.toys_servlet.SURVEY_TEAMPALY.JAVA;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,18 +20,23 @@ public class UserInfors extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
+        ArrayList arrayList = new ArrayList<>();
+                try {
             Common common = new Common();
             String query = "SELECT *\n" + //
                     "from user;";
             Statement statement = common.getStatement();
             ResultSet resultSet = statement.executeQuery(query);
+            HashMap hashMap = new HashMap<>();
             while(resultSet.next()){
-                System.out.println(resultSet.getString("NAME"));
-                System.out.println(resultSet.getString("USER_ID"));
-                System.out.println(resultSet.getString("PASSWORD"));
+                hashMap = new HashMap();
+                hashMap.put("NAME", resultSet.getString("NAME"));
+                hashMap.put("USER_ID", resultSet.getString("USER_ID"));
+                hashMap.put("PASSWORD", resultSet.getString("PASSWORD"));
+                arrayList.add(hashMap);
             }
-
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/UserInfors.jsp");
+            dispatcher.forward(request, response);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
