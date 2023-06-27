@@ -35,8 +35,9 @@
                                                 <%= name %>
                                             </td>
                                             <td>
-                                                <a data-bs-toggle="modal" href="#modalTarget-<%= userID %> "
-                                                    class="btn btn-primary">자세히 보기</a>
+                                                
+                                                <a data-bs-toggle="modal" href="#modalTarget-<%= userID %>" 
+                                                    class="btn btn-primary"> 자세히 보기</a>
                                                 <div class="modal" id="modalTarget-<%= userID %>">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
