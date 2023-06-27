@@ -45,14 +45,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="radio" name="answer1" id="" value="never">
-                                    <label for="answer1"> (1)전혀 아니다 </label>
-                                    <input type="radio" name="answer1" id="" value="hardly">
-                                    <label for="answer1"> (2)아니다 </label>
-                                    <input type="radio" name="answer1" id="" value="mostly">
-                                    <label for="answer1"> (3)그렇다 </label>
-                                    <input type="radio" name="answer1" id="" value="always">
-                                    <label for="answer1"> (4)매우그렇다 </label>
+                                    <label><input type="radio" name="question1" id="" value="ANSWER_01"> (1)전혀 아니다 </label>
+                                    <label><input type="radio" name="question1" id="" value="ANSWER_02"> (2)아니다 </label>
+                                    <label><input type="radio" name="question1" id="" value="ANSWER_03"> (3)그렇다 </label>
+                                    <label><input type="radio" name="question1" id="" value="ANSWER_04"> (4)매우 그렇다 </label>
                                 </td>
                             </tr>
                             <tr>
@@ -62,14 +58,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="radio" name="answer2" id="" value="never">
-                                    <label for="answer2"> (1)전혀 아니다 </label>
-                                    <input type="radio" name="answer2" id="" value="hardly">
-                                    <label for="answer2"> (2)아니다 </label>
-                                    <input type="radio" name="answer2" id="" value="mostly">
-                                    <label for="answer2"> (3)그렇다 </label>
-                                    <input type="radio" name="answer2" id="" value="always">
-                                    <label for="answer2"> (4)매우그렇다 </label>
+                                    <label><input type="radio" name="question2" id="" value="ANSWER_01"> (1)전혀 아니다 </label>
+                                    <label><input type="radio" name="question2" id="" value="ANSWER_02"> (2)아니다 </label>
+                                    <label><input type="radio" name="question2" id="" value="ANSWER_03"> (3)그렇다 </label>
+                                    <label><input type="radio" name="question2" id="" value="ANSWER_04"> (4)매우 그렇다 </label>
                                 </td>
                                 </td>
                             </tr>
@@ -80,14 +72,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="radio" name="answer" id="" value="">
-                                    <label for="answer"> (1)전혀 아니다 </label>
-                                    <input type="radio" name="answer" id="" value="">
-                                    <label for="answer"> (2)아니다 </label>
-                                    <input type="radio" name="answer" id="" value="">
-                                    <label for="answer"> (3)그렇다 </label>
-                                    <input type="radio" name="answer" id="" value="">
-                                    <label for="answer"> (4)매우그렇다 </label>
+                                    <label><input type="radio" name="question3" id="" value="ANSWER_01"> (1)전혀 아니다 </label>
+                                    <label><input type="radio" name="question3" id="" value="ANSWER_02"> (2)아니다 </label>
+                                    <label><input type="radio" name="question3" id="" value="ANSWER_03"> (3)그렇다 </label>
+                                    <label><input type="radio" name="question3" id="" value="ANSWER_04"> (4)매우 그렇다 </label>
                                 </td>
                             </tr>
                             <tr>
@@ -97,14 +85,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="radio" name="answer" id="" value="">
-                                    <label for="answer"> (1)전혀 아니다 </label>
-                                    <input type="radio" name="answer" id="" value="">
-                                    <label for="answer"> (2)아니다 </label>
-                                    <input type="radio" name="answer" id="" value="">
-                                    <label for="answer"> (3)그렇다 </label>
-                                    <input type="radio" name="answer" id="" value="">
-                                    <label for="answer"> (4)매우그렇다 </label>
+                                    <label><input type="radio" name="question4" id="" value="ANSWER_01"> (1)전혀 아니다 </label>
+                                    <label><input type="radio" name="question4" id="" value="ANSWER_02"> (2)아니다 </label>
+                                    <label><input type="radio" name="question4" id="" value="ANSWER_03"> (3)그렇다 </label>
+                                    <label><input type="radio" name="question4" id="" value="ANSWER_04"> (4)매우 그렇다 </label>
                                 </td>
                             </tr>
 
@@ -112,6 +96,7 @@
                         </tbody>
                     </table>
                     <button type="submit">SUBMIT</button>
+                    <button type="reset">RESET</button>
                 </form>
         </div>
 

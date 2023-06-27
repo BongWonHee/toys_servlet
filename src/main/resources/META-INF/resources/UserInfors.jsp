@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid ">
+    <%@ include file="./commons/menubar.jsp" %>
+
+ <div class="container-fluid ">
         <table class="table-bordered">
             <tr>
                 <td>
@@ -32,5 +35,6 @@
             </tr>
         </table>
     </div>
+
 </body>
 </html>

@@ -39,10 +39,10 @@
                 <a class="text-success navbar-brand" href="../survey.jsp">설문하기</a>
             </li>
             <li>
-                <a class="text-success navbar-brand" href="">회원관리</a>
+                <a class="text-success navbar-brand" href="../UserInfors.jsp">회원관리</a>
             </li>
             <li>
-                <a class="text-success navbar-brand" href="">통계관리</a>
+                <a class="text-success navbar-brand" href="../SurveyStatistics.jsp">통계관리</a>
             </li>
             <li class="membership">
                 <div class="login_out">
