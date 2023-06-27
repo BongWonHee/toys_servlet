@@ -9,6 +9,7 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Document</title>
+                    <link rel="stylesheet" href="../css/commons.css">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
             </head>
@@ -17,7 +18,7 @@
                 <%@ include file="./commons/menubar.jsp" %>
 
                     <div class="container-fluid ">
-                        <table class="table-bordered">
+                        <table class="usertable table-bordered">
                             <tr>
                                 <th>이름</th>
                                 <th>응답자 상세내역</th>

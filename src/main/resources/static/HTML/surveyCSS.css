@@ -43,6 +43,7 @@ ul {
 
 .loginsite{
 width: 300px;
+height: 200px;
 border: 0;
 border-radius: 10px;
 background-color: antiquewhite;
@@ -55,4 +56,14 @@ text-align: center;
 
 .thead {
     text-align: center;
+}
+
+.usertable {
+    width: 500px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.surveytable {
+    height: 500px;
 }

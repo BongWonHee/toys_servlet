@@ -32,7 +32,7 @@
 
                 <!-- 설문 내용 및 답변 -->
                 <form action="">
-                    <table width="100%" class="table-bordered mt-3 qna">
+                    <table width="100%" class="surveytable table-bordered mt-3 qna">
                         <thead>
                             다음은 설문 내용입니다.
                         </thead>
