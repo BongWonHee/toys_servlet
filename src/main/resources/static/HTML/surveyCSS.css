@@ -8,8 +8,12 @@ ul {
     justify-content: flex-start;
 }
 
-.membership {
+.login_out {
+    justify-content: end;
+    display: flex;
+}
 
+.membership {
     justify-content: flex-end;
 }
 
