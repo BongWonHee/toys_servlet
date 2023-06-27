@@ -1,3 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/commons.css">
+    <link rel="stylesheet" href="/HTML/surveyCSS.css">
+</head>
 <div class="container-fluid mainpage">
     <!-- 상단 -->
     <table width="100%" class="mb-3 mt-5">
@@ -19,26 +31,23 @@
     </table>
     <!-- 메뉴바 -->
     <table>
-        <ul class=" my-navbar navbar navbar-light bg-light">
+        <ul class="my-navbar navbar navbar-light bg-light">
             <li>
-                <a class="text-success navbar-brand" href="./Mainpage.html">메인화면</a>
+                <a class="text-success navbar-brand" href="../mainpage.jsp">메인화면</a>
             </li>
             <li>
-                <a class="text-success navbar-brand" href="./Survey.html">설문하기</a>
+                <a class="text-success navbar-brand" href="../survey.jsp">설문하기</a>
             </li>
             <li>
-                <a class="text-success navbar-brand" href="./UserInfors.html">회원관리</a>
+                <a class="text-success navbar-brand" href="">회원관리</a>
             </li>
             <li>
-                <a class="text-success navbar-brand" href="./SurveyStiatics.html">통계관리</a>
+                <a class="text-success navbar-brand" href="">통계관리</a>
             </li>
             <li class="membership">
                 <div class="login_out">
                     <div>
-                        <a class="text-success navbar-brand" href="">로그인</a>
-                    </div>
-                    <div>
-                        <a class="text-success navbar-brand" href="">로그아웃</a>
+                        <a class="text-success navbar-brand" href="../surveylogin.jsp">로그인</a>
                     </div>
                 </div>
             </li>
