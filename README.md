@@ -11,13 +11,13 @@
 * [Survey.jsp](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/resources/META-INF/resources/Survey.jsp)
 * [UserInfors.jsp](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/resources/META-INF/resources/UserInfors.jsp)
 
-- 김하늘 : 데이터 베이스 작성, 설문 통계
+- 김하늘 : 데이터 베이스 작성, 설문 통계,README작성
 * [SurveyStiatics.java](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/java/com/example/toys_servlet/SURVEY_TEAMPALY/JAVA/SurveyStiatics.java)
 * [StiaticsDao.java](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/java/com/example/toys_servlet/SURVEY_TEAMPALY/JAVA/daos/StiaticsDao.java)
 * [SurveyStatistics.html](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/resources/static/HTML/SurveyStatistics.html)
 * [SurveyStatistics.jsp](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/resources/META-INF/resources/SurveyStatistics.jsp)
 
-- 봉원희 : 메인페이지, 로그인&로그아웃 구현, 설문지 구현 및 미쟝센
+- 봉원희 : 메인페이지, 로그인 & 로그아웃 구현, 설문지 구현 및 미쟝센, 동영상 제작, PPT제작 및 발표
 * [SurveyMethod.java](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/java/com/example/toys_servlet/SURVEY_TEAMPALY/JAVA/SurveyMethod.java)
 * [SurveyList.java](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/java/com/example/toys_servlet/SURVEY_TEAMPALY/JAVA/SurveyList.java)
 * [Logout.java](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/java/com/example/toys_servlet/SURVEY_TEAMPALY/JAVA/Logout.java)
