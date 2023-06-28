@@ -34,7 +34,7 @@ public class Logout extends HttpServlet {
                 }
 
             }
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Mainpage.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/logoutmainpage.jsp");
             requestDispatcher.forward(request, response);
         } catch (Exception e) {
             System.out.println(e.getMessage());

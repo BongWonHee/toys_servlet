@@ -48,6 +48,7 @@ public class StiaticsDao {
             System.out.println(e.getMessage());
         }
         return count;
+
     }
 
     public ArrayList selectAll() {
@@ -77,6 +78,15 @@ public class StiaticsDao {
             // TODO: handle exception
         }
         return arrayList;
+    }
+
+    public int insertId(String id, String passward) {
+        try {
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return 0;
     }
 
 }

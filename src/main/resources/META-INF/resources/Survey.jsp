@@ -15,26 +15,12 @@
         <div class="container-fluid mainpage">
             <!-- 상단 -->
             <%@ include file="./commons/menubar.jsp" %>
-                <!-- 설문 세부 내용 -->
-                <table class="mb-3">
-                    <ul class="pt-2 ">
-                        <li>
-                            - 제목: 설문 홈페이지
-                        </li>
-                        <li>
-                            - 설명: 설문 홈페이지입니다.
-                        </li>
-                        <li>
-                            - 참여자: #명이 응답하였습니다.
-                        </li>
-                    </ul>
-                </table>
-
+                
                 <!-- 설문 내용 및 답변 -->
                 <form action="">
                     <table width="100%" class="surveytable table-bordered mt-3 qna">
                         <thead>
-                            다음은 설문 내용입니다.
+                            - 설문에 참여 해주셔서 감사합니다. -
                         </thead>
                         <tbody>
 

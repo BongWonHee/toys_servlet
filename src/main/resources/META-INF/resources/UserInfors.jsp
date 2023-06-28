@@ -9,9 +9,9 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Document</title>
-                    <link rel="stylesheet" href="../css/commons.css">
+                <link rel="stylesheet" href="../css/commons.css">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
             </head>
 
             <body>
@@ -36,17 +36,19 @@
                                                 <%= name %>
                                             </td>
                                             <td>
-                                                
-                                                <a data-bs-toggle="modal" href="#modalTarget-<%= userID %>" 
+
+                                                <a data-bs-toggle="modal" data-bs-target="#modalTarget-<%= userID %>"
                                                     class="btn btn-primary"> 자세히 보기</a>
-                                                <div class="modal" id="modalTarget-<%= userID %>">
+                                                <div class="modal" id="modalTarget-<%= userID %>" tabindex="-1"
+                                                    role="dialog" aria-labelledby="modalTargetLabel-<%= userID %>">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">설문 참여자 상세내역 보기
                                                             </div>
                                                             <div class="modal-body">
-                                                                userID: <%= userID %>
-                                                                    Password: <%= password %>
+                                                                이름: <%= name %>
+                                                                    userID: <%= userID %>
+                                                                        Password: <%= password %>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button data-bs-dismiss="modal"
@@ -60,7 +62,7 @@
                                         <% } %>
                         </table>
                     </div>
-
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
             </body>
 
             </html>
