@@ -40,7 +40,7 @@
                     <li>
                         <a class="text-success navbar-brand" href="/mainpage.jsp">메인화면</a>
                     </li>
-                 
+
                     <li class="membership">
                         <div class="login_out">
                             <div>
@@ -54,11 +54,15 @@
             <!-- 설문 세부 내용 -->
             <table class="mb-3 d-flex table-bordered">
                 <ul class="pt-5">
-                    <li>
-                        - 설문 시작을 위해서 로그인 해주세요. -
-                    </li>
+                    <div>
+                        <li>
+                            - 설문 시작을 위해서 로그인 해주세요. -
+                        </li>
 
-
+                        <a href="/SurveyLogin.jsp">
+                            <img src="./image/login2.jpg" alt="" style="max-width: 100%; height: auto;">
+                        </a>
+                    </div>
                 </ul>
             </table>
 
