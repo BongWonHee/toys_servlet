@@ -1,36 +1,71 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/commons.css">
-    <link rel="stylesheet" href="/HTML/surveyCSS.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../css/commons.css">
+        <link rel="stylesheet" href="/HTML/surveyCSS.css">
+    </head>
 
-<body>
-    <div class="container-fluid mainpage">
-        <!-- 상단 -->
-        <!-- 메뉴바 -->
-        <%@ include file="./commons/menubar.jsp" %>
-        <!-- 설문 세부 내용 -->
-        <table class="mb-3 d-flex table-bordered">
-            <ul class="pt-5">
-                <li>
-                    - 설문 시작을 위해서 로그인 해주세요. -
-                </li>
-                
-                
-            </ul>
-        </table>
+    <body>
+        <div class="container-fluid mainpage">
+            <!-- 상단 -->
+            <!-- 메뉴바 -->
+            <table width="100%" class="mb-3 mt-5">
+                <tbody class="">
+                    <tr>
+                        <td width="300">
+                            <img src="./image/힘내.png" alt="" style="max-width: 50%; height: auto;">
+                        </td>
 
-        <!-- 설문 내용 및 답변 -->
+                        <td class="page-title text-center">
 
-    </div>
+                            <h1>설문 홈페이지</h1>
+                        </td>
+                        <td width="300">
+                        <td class="membership">
 
-</body>
+                        </td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 메뉴바 -->
+            <table>
+                <ul class="my-navbar navbar navbar-light bg-light">
+                    <li>
+                        <a class="text-success navbar-brand" href="/mainpage.jsp">메인화면</a>
+                    </li>
+                 
+                    <li class="membership">
+                        <div class="login_out">
+                            <div>
+                                <a class="text-success navbar-brand" href="/SurveyLogin.jsp">로그인</a>
+                            </div>
 
-</html>
+                        </div>
+                    </li>
+                </ul>
+            </table>
+            <!-- 설문 세부 내용 -->
+            <table class="mb-3 d-flex table-bordered">
+                <ul class="pt-5">
+                    <li>
+                        - 설문 시작을 위해서 로그인 해주세요. -
+                    </li>
+
+
+                </ul>
+            </table>
+
+            <!-- 설문 내용 및 답변 -->
+
+        </div>
+
+    </body>
+
+    </html>
