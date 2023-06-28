@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-// @WebFilter(urlPatterns = "/*")
+@WebFilter(urlPatterns = "/surveyLogin")
 public class SurveyLogin implements Filter {
 
     @Override
@@ -40,23 +40,23 @@ public class SurveyLogin implements Filter {
         } else { // jsession 없음 로그인이 안됨.
             if ("홍길동".equals(userid) && "1234".equals(password)) {
                 httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyList.jsp");
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Survey.jsp");
                 requestDispatcher.forward(request, response);
             } else if ("박영희".equals(userid) && "5678".equals(password)) {
                 httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyList.jsp");
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Survey.jsp");
                 requestDispatcher.forward(request, response);
 
             } else if ("김철수".equals(userid) && "91011".equals(password)) {
                 httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyList.jsp");
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Survey.jsp");
                 requestDispatcher.forward(request, response);
             } else if ("이영미".equals(userid) && "1213".equals(password)) {
                 httpSession = ((HttpServletRequest) request).getSession();// 방어코드 임.
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyList.jsp");
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Survey.jsp");
                 requestDispatcher.forward(request, response);
             } else {
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyLogin.jsp");
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Survey.jsp");
                 requestDispatcher.forward(request, response);
             }
         }
