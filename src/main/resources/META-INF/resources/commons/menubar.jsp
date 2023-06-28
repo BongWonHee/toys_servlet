@@ -33,21 +33,24 @@
     <table>
         <ul class="my-navbar navbar navbar-light bg-light">
             <li>
-                <a class="text-success navbar-brand" href="../mainpage.jsp">메인화면</a>
+                <a class="text-success navbar-brand" href="/Mainpage.jsp">메인화면</a>
             </li>
             <li>
-                <a class="text-success navbar-brand" href="../survey.jsp">설문하기</a>
+                <a class="text-success navbar-brand" href="/Survey.jsp">설문하기</a>
             </li>
             <li>
                 <a class="text-success navbar-brand" href="http://192.168.0.94:8080/userInfors">회원관리</a>
             </li>
             <li>
-                <a class="text-success navbar-brand" href="../SurveyStatistics.jsp">통계관리</a>
+                <a class="text-success navbar-brand" href="/SurveyStatistics.jsp">통계관리</a>
             </li>
             <li class="membership">
                 <div class="login_out">
                     <div>
-                        <a class="text-success navbar-brand" href="../surveylogin.jsp">로그인</a>
+                        <a class="text-success navbar-brand" href="/SurveyLogin.jsp">로그인</a>
+                    </div>
+                    <div>
+                        <a class="text-success navbar-brand" href="/logout">로그아웃</a>
                     </div>
                 </div>
             </li>

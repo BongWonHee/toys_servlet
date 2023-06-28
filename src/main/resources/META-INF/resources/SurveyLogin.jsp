@@ -14,16 +14,16 @@
 <body>
     <div class="loginsite">
 
-            <form action="./survey.jsp">
+            <form action="/surveyLogin">
                 로그인
                 <div>
-                    <input type="text" name="id" id="" placeholder="ID">
+                    <input type="text" name="id" id=""  placeholder="ID">
                 </div>
                 <div>
                     <input type="text" name="password" id="" placeholder="Password">
                 </div>
                 <div>
-                    <button type="submit">제출</button>
+                    <button type="submit" >제출</button>
                 </div>
             </form>
             <div>
