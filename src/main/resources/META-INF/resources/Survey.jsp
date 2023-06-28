@@ -95,7 +95,7 @@
 
                         </tbody>
                     </table>
-                    <button type="submit">SUBMIT</button>
+                    <button type="submit" formaction="/surveyStiatics">제출</button>
                     <button type="reset">RESET</button>
                 </form>
         </div>
