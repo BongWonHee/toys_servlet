@@ -37,9 +37,9 @@
                                             </td>
                                             <td>
                                                 
-                                                <a data-bs-toggle="modal" href="#modalTarget-<%= userID %>" 
+                                                <a data-bs-toggle="modal" data-bs-target="#modalTarget-<%= userID %>" 
                                                     class="btn btn-primary"> 자세히 보기</a>
-                                                <div class="modal" id="modalTarget-<%= userID %>">
+                                                <div class="modal" id="modalTarget-<%= userID %>" tabindex="-1" role="dialog" aria-labelledby="modalTargetLabel-<%= userID %>" >
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                             <div class="modal-header">설문 참여자 상세내역 보기
