@@ -20,10 +20,8 @@
         <table class="mb-3 d-flex table-bordered">
             <ul class="pt-5">
                 <li>
-                    - 설문 시작을 위해서 로그인 해주세요. -
-                </li>
-                
-                
+                   - 설문에 참여해 주셔서 감사합니다. -
+                </li>             
             </ul>
         </table>
 
