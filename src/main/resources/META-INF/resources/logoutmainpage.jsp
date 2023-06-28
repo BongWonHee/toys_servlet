@@ -1,35 +1,68 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/commons.css">
-    <link rel="stylesheet" href="/HTML/surveyCSS.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../css/commons.css">
+        <link rel="stylesheet" href="/HTML/surveyCSS.css">
+    </head>
 
-<body>
-    <div class="container-fluid mainpage">
-        <!-- 상단 -->
-        <!-- 메뉴바 -->
-        <%@ include file="./commons/menubar.jsp" %>
-        <!-- 설문 세부 내용 -->
+    <body>
+        <div class="container-fluid mainpage">
+            <table width="100%" class="mb-3 mt-5">
+                <tbody class="">
+                    <tr>
+                        <td width="300">
+                            <img src="./image/힘내.png" alt="" style="max-width: 50%; height: auto;">
+                        </td>
+
+                        <td class="page-title text-center">
+
+                            <h1>설문 홈페이지</h1>
+                        </td>
+                        <td width="300">
+                        <td class="membership">
+
+                        </td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 메뉴바 -->
+            <table>
+                <ul class="my-navbar navbar navbar-light bg-light">
+                    <li>
+                        <a class="text-success navbar-brand" href="/mainpage.jsp">메인화면</a>
+                    </li>
+
+                    <div>
+                        <a class="text-success navbar-brand" href="/SurveyLogin.jsp">로그인</a>
+                    </div>
+                    <div>
+                        <a class="text-success navbar-brand" href="/logout">로그아웃</a>
+                    </div>
+                </ul>
+        </div>
+
+
+        </table>
         <table class="mb-3 d-flex table-bordered">
             <ul class="pt-5">
-                
+
                 <a href="/SurveyLogin.jsp">
                     <img src="./image/bye.jpg" alt="" style="max-width: 100%; height: auto;">
-                </a>             
+                </a>
             </ul>
         </table>
 
         <!-- 설문 내용 및 답변 -->
 
-    </div>
+        </div>
 
-</body>
+    </body>
 
-</html>
+    </html>
