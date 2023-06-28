@@ -33,7 +33,7 @@
         </table>
         <!-- 메뉴바 -->
         <table>
-            <ul class="my-navbar navbar navbar-light bg-light">
+            <ul class="my-navbar navbar navbar-light bg-light" >
                 <li>
                     <a class="text-success navbar-brand" href="/mainpage.jsp">메인화면</a>
                 </li>
@@ -44,7 +44,7 @@
                     <a class="text-success navbar-brand" href="/userInfors">회원관리</a>
                 </li>
                 <li>
-                    <a class="text-success navbar-brand" href="/SurveyStatistics.jsp">통계관리</a>
+                    <a class="text-success navbar-brand" href="/surveyStiatics">통계관리</a>
                 </li>
                 <li class="membership">
                     <div class="login_out">

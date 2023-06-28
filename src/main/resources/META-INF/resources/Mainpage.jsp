@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <div class="container-fluid mainpage">
+        <div class="container-fluid mainpage" style="text-align: center;">
             <!-- 상단 -->
             <!-- 메뉴바 -->
             <table width="100%" class="mb-3 mt-5">
@@ -40,6 +40,9 @@
                     <li>
                         <a class="text-success navbar-brand" href="/mainpage.jsp">메인화면</a>
                     </li>
+                    <li>
+                        <a class="text-success navbar-brand" href="/surveyStiatics">통계관리</a>
+                    </li>
 
                     <li class="membership">
                         <div class="login_out">
@@ -54,13 +57,9 @@
             <!-- 설문 세부 내용 -->
             <table class="mb-3 d-flex table-bordered">
                 <ul class="pt-5">
-                    <div>
-                        <li>
-                            - 설문 시작을 위해서 로그인 해주세요. -
-                        </li>
-
+                    <div>                       
                         <a href="/SurveyLogin.jsp">
-                            <img src="./image/login2.jpg" alt="" style="max-width: 100%; height: auto;">
+                            <img src="./image/login2.jpg" alt="" style="max-width: 100%;  height: auto;">
                         </a>
                     </div>
                 </ul>

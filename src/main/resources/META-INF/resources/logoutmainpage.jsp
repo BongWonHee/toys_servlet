@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <div class="container-fluid mainpage">
+        <div class="container-fluid mainpage" style="text-align: center;">
             <table width="100%" class="mb-3 mt-5">
                 <tbody class="">
                     <tr>

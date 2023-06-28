@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
         <body>
-            <!-- <%@ include file="./commons/menubar.jsp" %> -->
+            <%@ include file="./commons/menubar.jsp" %>
             <style>
                 .center-align {
                     text-align: center;
