@@ -8,30 +8,30 @@ import java.util.HashMap;
 import com.example.toys_servlet.common.Common;
 
 public class StiaticsDao {
-    public String getParticipant(Statement statement){
-     try {
-        System.out.println("-----통계-----");
-        System.out.println();
-            //설문에 참여한 참여자들의 이름 나열(중복 이름 삭제)
+    public String getParticipant(Statement statement) {
+        try {
+            System.out.println("-----통계-----");
+            System.out.println();
+            // 설문에 참여한 참여자들의 이름 나열(중복 이름 삭제)
             String queryA = "select DISTINCT user.NAME\n" + //
                     "from statistics\n" + //
                     "inner join `user`\n" + //
                     "on `user`.USER_ID = statistics.USER_ID;";
             ResultSet resultSetA = statement.executeQuery(queryA);
-            System.out.print("----- 설문 참여자 명단 : "); 
+            System.out.print("----- 설문 참여자 명단 : ");
             while (resultSetA.next()) {
-                System.out.print(resultSetA.getString("NAME") + " "+" ");
+                System.out.print(resultSetA.getString("NAME") + " " + " ");
             }
 
-     } catch (Exception e) {
-        System.out.println(e.getMessage());
-     }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         return null;
     }
 
-    //설문에 참여한 총 참여자 수 카운트
-    public int getRespondents(Statement statement){
-     try {
+    // 설문에 참여한 총 참여자 수 카운트
+    public int getRespondents(Statement statement) {
+        try {
             String queryB = "select count(DISTINCT USER_ID) as CNT\n" + //
                     "from statistics;";
             ResultSet resultSetB = statement.executeQuery(queryB);
@@ -39,18 +39,17 @@ public class StiaticsDao {
                 System.out.println("----- 총 설문 참여자 : " + resultSetB.getString("CNT"));
             }
 
-     } catch (Exception e) {
-        System.out.println(e.getMessage());
-     }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         return 0;
     }
-
 
     public ArrayList selectAll() {
         ArrayList arrayList = new ArrayList();
         try {
             Common common = new Common();
-            Statement statement = common.getStatement();  //workbench 접속
+            Statement statement = common.getStatement(); // workbench 접속
 
             String query = "select question.QUESTION, answer.ANSWER, count(answer.ANSWER) as CNT\n" + //
                     "from statistics\n" + //
@@ -66,7 +65,7 @@ public class StiaticsDao {
                 hashMap = new HashMap();
                 hashMap.put("question", resultSet.getString("QUESTION")); // 1 column값
                 hashMap.put("answer", resultSet.getString("ANSWER")); // 2 column값
-                hashMap.put("count", resultSet.getString("CNT"));  // 3 column값
+                hashMap.put("count", resultSet.getString("CNT")); // 3 column값
                 arrayList.add(hashMap);
             }
         } catch (Exception e) {
@@ -74,5 +73,14 @@ public class StiaticsDao {
         }
         return arrayList;
     }
-    
+
+    public int insertId(String id, String passward) {
+        try {
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return 0;
+    }
+
 }
