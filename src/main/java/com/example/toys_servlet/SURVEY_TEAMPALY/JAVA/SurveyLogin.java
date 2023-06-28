@@ -56,7 +56,7 @@ public class SurveyLogin implements Filter {
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Survey.jsp");
                 requestDispatcher.forward(request, response);
             } else {
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/Survey.jsp");
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/SurveyLogin.jsp");
                 requestDispatcher.forward(request, response);
             }
         }
