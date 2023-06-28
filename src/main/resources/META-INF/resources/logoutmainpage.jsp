@@ -19,9 +19,10 @@
         <!-- 설문 세부 내용 -->
         <table class="mb-3 d-flex table-bordered">
             <ul class="pt-5">
-                <li>
-                   - 설문에 참여해 주셔서 감사합니다. -
-                </li>             
+                
+                <a href="/SurveyLogin.jsp">
+                    <img src="./image/bye.jpg" alt="" style="max-width: 100%; height: auto;">
+                </a>             
             </ul>
         </table>
 
