@@ -30,7 +30,7 @@
  - [ERD](https://github.com/BongWonHee/toys_servlet/blob/main/src/main/resources/static/HTML/DB/Survey.png)
 
 ## RUN
-- IMAGE & VIDEO
+< IMAGE & VIDEO >
  * [웹페이지 페이지 구현](본인 ip:8080/Mainpage.jsp)
  * [YOUTUBE](https://www.youtube.com/watch?v=5u-gkhRW6Yg)
 
