@@ -1,4 +1,4 @@
-package com.example.toys_servlet.java;
+package com.example.toys_servlet.SURVEY_TEAMPALY.JAVA;
 
 import java.io.IOException;
 import java.io.PrintWriter;
